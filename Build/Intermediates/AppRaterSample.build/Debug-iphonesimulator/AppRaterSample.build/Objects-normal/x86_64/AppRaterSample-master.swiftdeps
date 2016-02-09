@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "b5185b37a05a3340852fbdb42b49a941"
+build_time: [508334136, 191872000]
+inputs:
+  "/Users/keithelliott/repos/AppRaterSample/AppRaterSample/ViewController.swift": [508334064, 0]
+  "/Users/keithelliott/repos/AppRaterSample/AppRaterSample/AppDelegate.swift": [508334064, 0]

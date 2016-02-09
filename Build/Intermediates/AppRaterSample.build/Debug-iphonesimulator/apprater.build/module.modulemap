@@ -1,0 +1,6 @@
+framework module apprater {
+  umbrella header "apprater.h"
+
+  export *
+  module * { export * }
+}

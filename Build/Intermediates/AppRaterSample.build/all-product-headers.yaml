@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/keithelliott/repos/AppRaterSample/Build/Products/Debug-iphonesimulator/apprater.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "apprater-Swift.h",
+          'external-contents': "/Users/keithelliott/repos/AppRaterSample/Build/Products/Debug-iphonesimulator/apprater.framework/Headers/apprater-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "apprater.h",
+          'external-contents': "/Users/keithelliott/repos/AppRaterSample/apprater/apprater.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/keithelliott/repos/AppRaterSample/Build/Products/Debug-iphonesimulator/apprater.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/keithelliott/repos/AppRaterSample/Build/Intermediates/AppRaterSample.build/Debug-iphonesimulator/apprater.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
