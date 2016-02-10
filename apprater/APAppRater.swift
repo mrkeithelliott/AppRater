@@ -13,13 +13,13 @@ let AP_APP_LAUNCHES_CHANGED = "com.gittielabs.applaunches.changed"
 let AP_INSTALL_DATE = "com.gittielabs.install_date"
 let AP_APP_RATING_SHOWN = "com.gittielabs.app_rating_shown"
 
-public class APAppRater: NSObject, UIAlertViewDelegate {
+@objc public class APAppRater: NSObject, UIAlertViewDelegate {
     var application: UIApplication!
     var userdefaults = NSUserDefaults()
     let requiredLaunchesBeforeRating = 0
     public var appId: String!
     
-    public static var sharedInstance = APAppRater()
+    @objc public static var sharedInstance = APAppRater()
     
     //MARK: - Initialize
     override init() {
@@ -132,12 +132,12 @@ public class APAppRater: NSObject, UIAlertViewDelegate {
     }
     
     //MARK: - Alert Views
-    public func alertViewCancel(alertView: UIAlertView) {
+    @objc public func alertViewCancel(alertView: UIAlertView) {
         // reset app launch count
         self.resetAppLaunches()
     }
     
-    public func alertView(alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int) {
+    @objc public func alertView(alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int) {
         setAppRatingShown()
         
         let url = NSURL(string: "itms-apps://itunes.apple.com/app/id\(self.appId)")
